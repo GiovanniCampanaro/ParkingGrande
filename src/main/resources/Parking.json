@@ -1,0 +1,32 @@
+{"name":  "AutoParkGio",
+  "floors": [
+    {"name": "uderground",
+      "pads": [
+        {"name": "u1"},
+        {"name": "u2"},
+        {"name": "u3"},
+        {"name": "u4"},
+        {"name": "u5"},
+        {"name": "u6"},
+        {"name": "u7"},
+        {"name": "u8"},
+        {"name": "u9"},
+        {"name": "u10"}
+      ]},
+    {"name": "first",
+      "pads": [
+        {"name": "f1"},
+        {"name": "f2"},
+        {"name": "f3"},
+        {"name": "f4"},
+        {"name": "f5"},
+        {"name": "f6"},
+        {"name": "f7"},
+        {"name": "f8"},
+        {"name": "f9"},
+        {"name": "f10"}
+      ]}
+
+
+  ]
+}
