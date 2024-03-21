@@ -7,6 +7,7 @@ public class Floor {
     Pad [] pads;
     public Floor() {
     }
+
     static public Floor builFloor(String filename) {
         String txt =  Utilities.readTextFrom(filename);
         Gson gson = new Gson();
@@ -15,8 +16,11 @@ public class Floor {
     }
 
     public Pad findFreePad(String plate) {
+        if (this.pads == null) {
+            return null;
+        }
         for (Pad pad : this.pads) {
-            if (pad.plate == null) {
+            if (pad != null && (pad.plate == null || pad.plate.length()== 0)) {
                 pad.plate = plate;
                 return pad;
             }
