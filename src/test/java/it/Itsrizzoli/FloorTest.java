@@ -47,4 +47,14 @@ class FloorTest {
         assertNull(pad,"pad must be null");
 
     }
+
+    @Test
+    void findPad() {
+        Floor floor = Floor.builFloor("Floor.json");
+        assertNotNull(floor,"cannot load floor");
+        Pad pad = floor.findFreePad("EV023BT");
+        Pad find = floor.findPad("EV023BT");
+        assertNotNull(find,"cannot targa auto");
+
+    }
 }

@@ -72,7 +72,7 @@ public class ClientHandler {
             case "park":
                 return park(plate);
             case "whereis":
-                break;
+                return whereis(plate);
             case "pay":
                 break;
             default:
@@ -87,5 +87,13 @@ public class ClientHandler {
             return pad.name;
         }
         return "non ce posto";
+    }
+
+    String whereis(String plate) {
+        Pad pad = parkingManager.findPlate(plate);
+        if (pad != null) {
+            return pad.name;
+        }
+        return "non ce l'auto";
     }
 }

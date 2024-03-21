@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cba82efc-300d-4458-bda4-1a40e1fcd770" name="Changes" comment="Parking pulito2">
+    <list default="true" id="cba82efc-300d-4458-bda4-1a40e1fcd770" name="Changes" comment="Fixxato ricerca piano oltre il primo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ParkingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ParkingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/FloorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/FloorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.App.executor": "Run",
-    "Application.DebugParking.executor": "Run",
+    "Application.DebugParking.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.ClientHandlerTest.park.executor": "Debug",
     "JUnit.FloorTest.builFloor.executor": "Run",
@@ -218,7 +220,7 @@
       <updated>1710437682769</updated>
       <workItem from="1710437683875" duration="1415000" />
       <workItem from="1711025877102" duration="223000" />
-      <workItem from="1711026118325" duration="7805000" />
+      <workItem from="1711026118325" duration="9165000" />
     </task>
     <task id="LOCAL-00001" summary="parking grande fatto">
       <option name="closed" value="true" />
@@ -268,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711032954329</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixxato ricerca piano oltre il primo">
+      <option name="closed" value="true" />
+      <created>1711035729272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711035729272</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,15 +290,21 @@
     <MESSAGE value="parking grande con i test" />
     <MESSAGE value="Parking pulito" />
     <MESSAGE value="Parking pulito2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parking pulito2" />
+    <MESSAGE value="Fixxato ricerca piano oltre il primo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixxato ricerca piano oltre il primo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ClientHandler.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/Itsrizzoli/ClientHandler.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

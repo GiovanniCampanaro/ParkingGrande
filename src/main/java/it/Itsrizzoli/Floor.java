@@ -27,4 +27,17 @@ public class Floor {
         }
         return null;
     }
+
+
+    public Pad findPad(String plate) {
+        if (this.pads == null) {
+            return null;
+        }
+        for (Pad pad : this.pads) {
+            if (pad != null && pad.plate != null && pad.plate.equals(plate )) {
+                return pad;
+            }
+        }
+        return null;
+    }
 }

@@ -20,4 +20,14 @@ public class ParkingManager {
         }
         return null;
     }
+
+    public Pad findPlate(String plate) {
+        for (Floor floor :this.parking.floors) {
+            Pad pad = floor.findPad(plate);
+            if (pad != null) {
+                return pad;
+            }
+        }
+        return null;
+    }
 }
