@@ -38,5 +38,6 @@ public class ParkingManager {
         for (Floor floor :this.parking.floors) {
             return floor.findFreePad(plate);
         }
+        return null;
     }
 }

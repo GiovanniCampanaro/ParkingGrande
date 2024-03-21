@@ -71,9 +71,9 @@ public class ClientHandler {
                 break;
             case "pay":
                 break;
-            default:  return "comando non riconuscuto";
+            default:  return "comando non riconusciuto";
         }
-        return "comando non riconuscuto";
+        return "comando non riconusciuto";
     }
 
     String park(String plate) {

@@ -16,7 +16,11 @@ public class Floor {
 
     public Pad findFreePad(String plate) {
         for (Pad pad : this.pads) {
-
+            if (pad.plate == null) {
+                pad.plate = plate;
+                return pad;
+            }
         }
+        return null;
     }
 }
