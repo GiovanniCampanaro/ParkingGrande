@@ -8,13 +8,14 @@ import java.net.Socket;
 public class ClientHandler {
     Socket clientSocket;
     ParkingManager parkingManager;
+
     public ClientHandler(Socket clientSocket, ParkingManager parkingManager) {
 
         this.clientSocket = clientSocket;
         this.parkingManager = parkingManager;
     }
 
-    void handle(){
+    void handle() {
         BufferedReader in;
         in = getBufferedReader();
         PrintWriter out = null;
@@ -22,6 +23,7 @@ public class ClientHandler {
         readerLoop(in, out);
 
     }
+
     private BufferedReader getBufferedReader() {
         BufferedReader in;
         try {
@@ -32,6 +34,7 @@ public class ClientHandler {
         }
         return in;
     }
+
     private PrintWriter getPrintWriter(PrintWriter out) {
         try {
             out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -57,55 +60,28 @@ public class ClientHandler {
         }
     }
 
-    String parse (String s) {
+    String parse(String s) {
         String[] parts = s.split("-");
         if (parts.length < 2) {
-            return "paramentri insufficienti";
+            return "parametri insufficienti";
         }
         String cmd = parts[0];
         String plate = parts[1];
         switch (cmd.toLowerCase()) {
             case "park":
-                    return park(plate);
+                return park(plate);
             case "whereis":
                 break;
             case "pay":
                 break;
-            default:  return "comando non riconusciuto";
+            default:
+                return "comando non riconosciuto";
         }
-        return "comando non riconusciuto";
+        return "comando non riconosciuto";
     }
 
     String park(String plate) {
         Pad pad = parkingManager.findFreePad(plate);
         return "non ce posto";
     }
-    /*private Ticket getTicket(String s){
-        Gson gson = new Gson();
-        try{
-            Ticket ticket = gson.fromJson(s, Ticket. class);
-            System.out.println(ticket);
-            if(ticket.plate == null){
-                return  null;
-            }
-            return ticket;
-        }catch (Exception e){
-            System.out.println(e);
-            return null;
-        }
-    }
-    private String getPlate(String s){
-        Gson gson = new Gson();
-        try{
-            FindCmd findCmd = gson.fromJson(s, FindCmd. class);
-            Ticket ticket = parkingManager.findPlate(findCmd.plateToFind);
-            if (ticket == null){
-                return null;
-            }
-            return ticket.plate;
-        }catch (Exception e){
-            System.out.println(e);
-            return null;
-        }
-    }*/
 }
