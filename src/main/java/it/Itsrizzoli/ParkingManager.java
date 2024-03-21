@@ -13,7 +13,10 @@ public class ParkingManager {
 
     public Pad findFreePad(String plate) {
         for (Floor floor :this.parking.floors) {
-            return floor.findFreePad(plate);
+            Pad pad = floor.findFreePad(plate);
+            if (pad != null) {
+                return pad;
+            }
         }
         return null;
     }

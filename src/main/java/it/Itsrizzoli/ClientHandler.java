@@ -52,7 +52,8 @@ public class ClientHandler {
         try {
             while ((s = in.readLine()) != null) {
                 //System.out.println(s);
-                parse(s);
+                String qui= parse(s);
+                out.println(qui);
             }
 
         } catch (IOException e) {
@@ -82,6 +83,9 @@ public class ClientHandler {
 
     String park(String plate) {
         Pad pad = parkingManager.findFreePad(plate);
+        if (pad != null) {
+            return pad.name;
+        }
         return "non ce posto";
     }
 }
