@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cba82efc-300d-4458-bda4-1a40e1fcd770" name="Changes" comment="parking grande fatto">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Padaaa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/FloorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/PadTest.java" afterDir="false" />
+    <list default="true" id="cba82efc-300d-4458-bda4-1a40e1fcd770" name="Changes" comment="parking grande con i test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Floor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Floor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/FloorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/Itsrizzoli/FloorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,7 @@
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.FloorTest.builFloor.executor": "Run",
     "JUnit.FloorTest.findFreePad.executor": "Run",
+    "JUnit.FloorTest.findFreePadPieno.executor": "Run",
     "JUnit.FloorTest.findFreePadVuoto.executor": "Run",
     "JUnit.PadTest.buildPad.executor": "Run",
     "JUnit.PadTest.buildPadCampanaro.executor": "Run",
@@ -96,7 +92,7 @@
       <recent name="it.Itsrizzoli" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FloorTest.findFreePadVuoto">
+  <component name="RunManager" selected="JUnit.FloorTest.findFreePadPieno">
     <configuration name="FloorTest.builFloor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ParkingGrande" />
       <extension name="coverage">
@@ -129,6 +125,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FloorTest.findFreePadPieno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ParkingGrande" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.Itsrizzoli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.Itsrizzoli" />
+      <option name="MAIN_CLASS_NAME" value="it.Itsrizzoli.FloorTest" />
+      <option name="METHOD_NAME" value="findFreePadPieno" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FloorTest.findFreePadVuoto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ParkingGrande" />
       <extension name="coverage">
@@ -140,22 +152,6 @@
       <option name="PACKAGE_NAME" value="it.Itsrizzoli" />
       <option name="MAIN_CLASS_NAME" value="it.Itsrizzoli.FloorTest" />
       <option name="METHOD_NAME" value="findFreePadVuoto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PadTest.buildPadCampanaro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ParkingGrande" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.Itsrizzoli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.Itsrizzoli" />
-      <option name="MAIN_CLASS_NAME" value="it.Itsrizzoli.PadTest" />
-      <option name="METHOD_NAME" value="buildPadCampanaro" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FloorTest.findFreePadPieno" />
         <item itemvalue="JUnit.FloorTest.findFreePadVuoto" />
         <item itemvalue="JUnit.FloorTest.findFreePad" />
         <item itemvalue="JUnit.FloorTest.builFloor" />
         <item itemvalue="JUnit.PadTest.buildPads" />
-        <item itemvalue="JUnit.PadTest.buildPadCampanaro" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +200,7 @@
       <updated>1710437682769</updated>
       <workItem from="1710437683875" duration="1415000" />
       <workItem from="1711025877102" duration="223000" />
-      <workItem from="1711026118325" duration="5007000" />
+      <workItem from="1711026118325" duration="5880000" />
     </task>
     <task id="LOCAL-00001" summary="parking grande fatto">
       <option name="closed" value="true" />
@@ -222,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711027797062</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="parking grande con i test">
+      <option name="closed" value="true" />
+      <created>1711031342576</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711031342576</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,14 +235,15 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="parking grande fatto" />
-    <option name="LAST_COMMIT_MESSAGE" value="parking grande fatto" />
+    <MESSAGE value="parking grande con i test" />
+    <option name="LAST_COMMIT_MESSAGE" value="parking grande con i test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/Itsrizzoli/Floor.java</url>
-          <line>24</line>
+          <line>27</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
